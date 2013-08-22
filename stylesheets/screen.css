@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 9, ../sass/screen.scss */
 body {
-  background: #151f2a url(/images/bg1.jpg) center top no-repeat;
+  background: #151f2a url(images/bg1.jpg) center top no-repeat;
   background-size: 100%;
   color: #f9944b;
   font-family: 'adelle', Helvetica, sans-serif;
