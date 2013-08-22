@@ -69,50 +69,69 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 9, ../sass/screen.scss */
 body {
-  background: #151f2a;
-  color: #f5524b;
+  background: #151f2a url(/images/bg1.jpg) center top no-repeat;
+  background-size: 100%;
+  color: #f9944b;
   font-family: 'adelle', Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 section.bio {
   padding: 0 0 0 50px;
   margin: 48px auto 0 0;
 }
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 section.bio h1 {
-  font-size: 60px;
-  margin-bottom: 25px;
+  font-size: 64px;
+  margin-bottom: 23px;
   font-weight: 100;
   font-style: italic;
-  color: #f9944b;
+  color: rgba(255, 255, 255, 0.8);
 }
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 section.bio p {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 22px;
   width: 360px;
 }
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
+section.bio p.small {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 36, ../sass/screen.scss */
 section.bio p a {
-  color: #f5524b;
+  color: #f9944b;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* line 35, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 section.bio p a:hover {
-  color: #3678dc;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 767px) {
-  /* line 43, ../sass/screen.scss */
+  /* line 48, ../sass/screen.scss */
+  body {
+    background-image: none;
+  }
+
+  /* line 49, ../sass/screen.scss */
   section.bio {
     position: relative;
     width: auto;
     padding: 20px;
     margin: 0;
+  }
+  /* line 50, ../sass/screen.scss */
+  section.bio h1 {
+    font-size: 44px;
+  }
+  /* line 51, ../sass/screen.scss */
+  section.bio p {
+    width: auto;
   }
 }
