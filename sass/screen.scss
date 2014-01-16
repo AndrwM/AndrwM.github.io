@@ -12,6 +12,10 @@ body {
   font-family: "proxima-nova", Helvetica, sans-serif;
   font-weight: 400;
   padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 8px inset;
+  height: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 section.bio {
