@@ -74,15 +74,19 @@ body {
   font-family: "proxima-nova", Helvetica, sans-serif;
   font-weight: 400;
   padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 8px inset;
+  height: 100%;
+  position: fixed;
+  width: 100%;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 section.bio {
   margin: 20% auto;
   padding: 0 60px;
   text-align: center;
 }
-/* line 21, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 section.bio h1 {
   font-size: 60px;
   font-family: "lexia", Helvetica, sans-serif;
@@ -90,7 +94,7 @@ section.bio h1 {
   font-weight: 100;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 28, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 section.bio h2 {
   font-size: 12px;
   line-height: 14px;
@@ -98,7 +102,7 @@ section.bio h2 {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 35, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 section.bio p.email {
   padding: 10px 14px;
   border-radius: 2px;
