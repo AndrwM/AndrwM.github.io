@@ -1,6 +1,6 @@
-
+//---------------------
 // andrew.mn v0.2
-
+//---------------------
 
 // ....... Setup
 
@@ -12,12 +12,25 @@ $c-green: #39CE6A;
 $c-darkteal: #376361;
 $c-grey: #cfcfcf;
 
+@mixin keyframes($name) {
+  @-o-keyframes $name { @content };
+  @-moz-keyframes $name { @content };
+  @-webkit-keyframes $name { @content }; 
+  @keyframes $name { @content };
+}
+@mixin animation($animation) {
+  -o-animation: $animation;
+  -moz-animation: $animation;
+  -webkit-animation: $animation;
+  animation: $animation;
+}
+
+// ....... Global Defaults
+
 * {
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
-
-// ....... Global Defaults
 
 body {
   background: #fff;
@@ -79,6 +92,7 @@ section.about {
   width: 480px;
   margin: 10% auto;
   text-align: center;
+  @include animation(introFade 2s 1);
 
   .headshot {
     width: 130px;
@@ -92,4 +106,17 @@ section.about {
     }
   }
 
+}
+
+// ....... Animation
+
+@include keyframes(introFade) {
+  0% {
+    opacity: 0;
+    @include scale(0);
+  }
+  100% {
+    opacity: 1;
+    @include scale(1);
+  }
 }
