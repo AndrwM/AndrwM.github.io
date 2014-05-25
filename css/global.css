@@ -140,15 +140,17 @@ p a:hover {
 
 /* line 91, ../sass/global.scss */
 section.about {
-  width: 480px;
+  max-width: 480px;
+  min-width: 240px;
   margin: 10% auto;
+  padding: 0 40px;
   text-align: center;
   -o-animation: introFade 2s 1;
   -moz-animation: introFade 2s 1;
   -webkit-animation: introFade 2s 1;
   animation: introFade 2s 1;
 }
-/* line 97, ../sass/global.scss */
+/* line 99, ../sass/global.scss */
 section.about .headshot {
   width: 130px;
   height: 130px;
@@ -156,14 +158,14 @@ section.about .headshot {
   overflow: hidden;
   margin: 20px auto;
 }
-/* line 103, ../sass/global.scss */
+/* line 105, ../sass/global.scss */
 section.about .headshot img {
   width: 100%;
   height: 100%;
 }
 
 @-o-keyframes introFade {
-  /* line 114, ../sass/global.scss */
+  /* line 116, ../sass/global.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0, 0);
@@ -173,7 +175,7 @@ section.about .headshot img {
     transform: scale(0, 0);
   }
 
-  /* line 118, ../sass/global.scss */
+  /* line 120, ../sass/global.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1, 1);
@@ -185,7 +187,7 @@ section.about .headshot img {
 }
 
 @-moz-keyframes introFade {
-  /* line 114, ../sass/global.scss */
+  /* line 116, ../sass/global.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0, 0);
@@ -195,7 +197,7 @@ section.about .headshot img {
     transform: scale(0, 0);
   }
 
-  /* line 118, ../sass/global.scss */
+  /* line 120, ../sass/global.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1, 1);
@@ -207,7 +209,7 @@ section.about .headshot img {
 }
 
 @-webkit-keyframes introFade {
-  /* line 114, ../sass/global.scss */
+  /* line 116, ../sass/global.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0, 0);
@@ -217,7 +219,7 @@ section.about .headshot img {
     transform: scale(0, 0);
   }
 
-  /* line 118, ../sass/global.scss */
+  /* line 120, ../sass/global.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1, 1);
@@ -229,7 +231,7 @@ section.about .headshot img {
 }
 
 @keyframes introFade {
-  /* line 114, ../sass/global.scss */
+  /* line 116, ../sass/global.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0, 0);
@@ -239,7 +241,7 @@ section.about .headshot img {
     transform: scale(0, 0);
   }
 
-  /* line 118, ../sass/global.scss */
+  /* line 120, ../sass/global.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1, 1);
